@@ -227,7 +227,7 @@ if(validateInput(firstNameInput.value, /^[A-Z][a-z]{3,8}/, firstNameError, first
 validateInput(lastNameInput.value, /^[A-Z][a-z]{3,8}/, lastNameError, lastNameInput, "Enter a string with a capital letter and 3-8 lowercase letters")&
 validateInput(emailInput.value, /^[\w]*@[a-zA-Z]*\.com$/, emailError, emailInput, "Enter a valid email in the format username@example.com")&
 
-validateInput(ageInput.value, /([1-7][0-9]|80)$/, ageError, ageInput, "Age should be within the range of 10 to 80")&
+validateInput(ageInput.value, /(^[1-7][0-9]|80)$/, ageError, ageInput, "Age should be within the range of 10 to 80")&
 validateInput(passwordInput.value, /^[\w!@#$%^&*()_+=[\]{}|\\,./?^-]{8,}$/, passwordError, passwordInput, "Password should be 8+ characters and include only letters, numbers, and symbols"))
 {
 
