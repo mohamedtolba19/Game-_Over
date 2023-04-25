@@ -147,27 +147,6 @@ $(e.target).addClass('active');
 
 
 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Functions 
 
 //1- function to get user data from inputs 
