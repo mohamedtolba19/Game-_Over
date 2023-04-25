@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- navbar -->
+     <nav   class="  navbar navbar-expand-xl bg-body-tertiary position-relative">
+        <div class="container-fluid  " >
+          <a  class="navbar-brand  pe-0 " href="#">
+            <img src="img/logo.png" class="w-25" alt="">
+            Game Over </a>
+          <button id="btn" class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            
+            <ul id="home-ul"  class="navbar-nav d-none    me-auto mb-2 ">
+          
+              <li class="nav-item">
+                <a class="nav-link active " href="#">All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">mmorpg</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">shooter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">sailing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">permadeath</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#">superhero</a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link  " href="#">pixel</a>
+              </li>
+              
+              
+               
+          
+           
+          
+           
+            </ul>
+           
+            <form id="searchForm" class="mb-3 mb-xl-0 d-none">
+              <input id="search" type="search" class="form-control ms-3    " placeholder="search by name">
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+                <li id="login-link" class="nav-item">
+                    <span >login</span>
+                  </li>
+                
+                  <li id="register-link" class="nav-item ms-2">
+                    <span class=" brdr py-2 px-5" href="#">Join Free</span>
+                  </li>
+              <li id="logout-link" class="nav-item  d-none d-flex justify-content-center align-items-center  ">
+                <span class="  brdr py-2 px-3  ms-3 " href="#">log out </span>
+              </li>
+             
+                </ul>
+                
+            
+         
+          </div>
+        </div>
+      
+      </nav> 
+    
+      <!-- registrer form  -->
+      <section id="register" class="d-none">
+        <div class="container-fluid px-5 py-0  vh-100 ">
+            <div class="row py-5 row-form gx-0  h-100">
+                <div class="col-md-6 h-100 d-flex justify-content-center align-items-center ">
+        <img src="img/logo.png" class="  " alt="">
+                </div>  
+                <div class="col-md-6">
+        <div class="form py-5 px-5 ">
+          <h1 id="form-title" class="text-center h2 mb-3">Create My Account!</h1>
+          <form >
+            <div class="d-flex justify-content-center">
+             <div class="me-3 w-50">
+              <input id="firstNameInput" type="text" placeholder="First Name" class="form-control  bg-dark" name="first_name">
+              <div id="firstNameError" class="alert d-none"></div>
+             </div>
+            <div class="w-50">
+              <input id="lastNameInput" type="text" placeholder="Last Name" class="form-control  bg-dark" name="last_name">
+              <div id="lastNameError" class="alert d-none"></div>
+            </div>
+            </div>
+            
+            <input id="emailInput" type="email" placeholder="Email Address" class="form-control mt-3 bg-dark" name="email">
+            <div id="emailError" class="alert d-none"></div>
+            <input id="ageInput" type="number" placeholder="Age" class="form-control mt-3 bg-dark" name="age">
+            <div id="ageError" class="alert d-none"></div>
+            <input id="passwordInput" type="password" placeholder="Password" class="form-control mt-3 bg-dark" name="password">
+            <div id="passwordError" class="alert d-none"></div>
+            <button id="submitBtn" class="btn btn-outline-dark w-100 mt-3 text-white">Create Account</button>
+          </form>
+          <div class="p-3">
+            <p class="text-center">do you have account ? <button id="signin" class="btn px-4 py-1 text-white btn-outline-primary">sign in  </button></p>
+          </div>
+        </div>
+                </div>  
+              </div>
+          </div>
+      </section>
+      <section id="login" class="d-none" >
+        <div class="container-fluid px-5 py-0  vh-100 ">
+            <div class="row py-5 row-form gx-0  h-100">
+              <div class="col-md-6 h-100 d-flex justify-content-center align-items-center ">
+                <img src="img/logo.png" class="  " alt="">
+                        </div>  
+                <div class="col-md-6">
+        <div class="form py-5 px-5 ">
+          <h1 id="form-title" class="text-center h2 mb-3">log in to your account!</h1>
+          <form >
+            <input id="loginEmailInput" type="email" placeholder="Email Address" class="form-control mt-3 bg-dark" name="email">
+            <div id="loginEmailError" class="alert d-none"></div>
+           
+            <input id="loginPasswordInput" type="password" placeholder="Password" class="form-control mt-3 bg-dark" name="password">
+            <div id="loginPasswordError" class="alert d-none"></div>
+            <button id="loginBtn" class="btn  btn-outline-dark w-100 mt-3 text-white">log in </button>
+          </form>
+          <div class="p-3">
+            <p class="text-center">Create account  <button id="signup" class="btn px-4 py-1 text-white btn-outline-primary"> sign up </button></p>
+          </div>
+        </div>
+                </div>  
+              </div>
+          </div>
+      </section>
+      <section id="layer" class="d-none">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+      </section>
+      <section id="home" class="d-none  ">
+        <div class="container py-3">
+           <div id="rowData" class="row g-4 justify-content-center">
+          
+           </div>
+        </div>
+      </section>
+      <section id="game-details" class="d-none">
+<div class="container py-5 position-relative">
+    <h3 class="mb-4 ">Game Details</h3>
+    <i id="close" class="fa-solid fa-xmark position-absolute top-0 end-0 p-5 fs-2"></i>
+    <div id="rowDetails" class="row">
+      
+    </div>
+</div>
+      </section>
+   
+   
+
+</body>
+</html>
+<script src="js/jquery-3.6.3.min.js" ></script>
+<script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="js/main.js" ></script>
+</body>
+</html>
