@@ -281,7 +281,7 @@ async function loginForm(e) {
       } 
       else 
       {
-        clearForm('login');
+       
         loginBtn.innerHTML = ` log in `;
         handleLoginError(finalresponse.message);
       }
